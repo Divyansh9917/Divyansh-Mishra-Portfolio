@@ -7,7 +7,7 @@ const PROJECTS = [
     title: 'Agentic Honeypot API',
     desc: 'AI-powered honeypot that autonomously detects scam intent via pattern matching + GPT-4.5 LLM analysis. Engages scammers in realistic dialogue to extract bank accounts, UPI IDs and phishing links. Serverless-ready on Vercel.',
     stack: ['FastAPI', 'OpenAI GPT-4.5', 'Redis', 'Vercel', 'Python'],
-    code: 'https://github.com/abhiteshchauhan/HONEYPOT-API-FINAL.git7',
+    code: 'https://github.com/abhiteshchauhan/HONEYPOT-API-FINAL.git',
     color: '#00f5a0',
     featured: true,
   },
