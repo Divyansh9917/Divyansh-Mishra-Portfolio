@@ -93,16 +93,19 @@ export default function Achievements() {
             facilitating their smooth transition into college life.
           </p>
         </div>
-
+        <br> </br>
         <div className={s.por}>
           <div className={s.porTop}>
             <span className={s.porBadge}>Position of Responsibility</span>
           </div>
-          <h3 className={s.porTitle}>Adhyaay Mentor</h3>
-          <div className={s.porSub}>Adhyaay Mentorship Board · IIIT Bhagalpur · Sep 2025 – Present</div>
+          <h3 className={s.porTitle}>PR and Sponsorship Co-Lead</h3>
+          <div className={s.porSub}>Enyugma,2026 · Annual Techno-Cultural Festival,IIIT Bhagalpur · Feb 2026 </div>
           <p className={s.porDesc}>
-            Guiding a cohort of 20 students in academic and personal development,
-            facilitating their smooth transition into college life.
+            Led PR and sponsorship initiatives for Enyugma, reaching out to brands, local businesses, and media partners for collaborations.
+            Coordinated with sponsors and external partners to secure funding, merchandise, and promotional support for the fest.
+          </p>
+          <p className={s.porDesc}>
+            Coordinated with sponsors and external partners to secure funding, merchandise, and promotional support for the fest.
           </p>
         </div>
       </div>
