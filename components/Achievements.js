@@ -93,7 +93,7 @@ export default function Achievements() {
             facilitating their smooth transition into college life.
           </p>
         </div>
-        <br />
+
         <div className={s.por}>
           <div className={s.porTop}>
             <span className={s.porBadge}>Position of Responsibility</span>
