@@ -74,8 +74,8 @@ export default function About() {
             </div>
 
             <div className={s.links}>
-              <a href="https://linkedin.com/in/divyansh-mishra" target="_blank" rel="noopener" className={s.lnk} data-hover>LinkedIn ↗</a>
-              <a href="https://github.com/divyansh9917" target="_blank" rel="noopener" className={s.lnk} data-hover>GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/divyansh9917/" target="_blank" rel="noopener" className={s.lnk} data-hover>LinkedIn ↗</a>
+              <a href="https://github.com/Divyansh9917" target="_blank" rel="noopener" className={s.lnk} data-hover>GitHub ↗</a>
               <a href="mailto:divyanshm027@gmail.com" className={s.lnk} data-hover>Email ↗</a>
               <a href="tel:+918467063664" className={s.lnk} data-hover>+91 84670 63664 ↗</a>
             </div>
