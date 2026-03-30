@@ -93,6 +93,18 @@ export default function Achievements() {
             facilitating their smooth transition into college life.
           </p>
         </div>
+
+        <div className={s.por}>
+          <div className={s.porTop}>
+            <span className={s.porBadge}>Position of Responsibility</span>
+          </div>
+          <h3 className={s.porTitle}>Adhyaay Mentor</h3>
+          <div className={s.porSub}>Adhyaay Mentorship Board · IIIT Bhagalpur · Sep 2025 – Present</div>
+          <p className={s.porDesc}>
+            Guiding a cohort of 20 students in academic and personal development,
+            facilitating their smooth transition into college life.
+          </p>
+        </div>
       </div>
     </section>
   );

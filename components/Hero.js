@@ -125,10 +125,10 @@ export default function Hero() {
               <path d="M3 7.5h9M8 3.5l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="https://github.com/divyansh9917" target="_blank" rel="noopener" className={s.btnGhost} data-hover>
+          <a href="https://github.com/Divyansh9917" target="_blank" rel="noopener" className={s.btnGhost} data-hover>
             GitHub ↗
           </a>
-          <a href="https://linkedin.com/in/divyansh-mishra" target="_blank" rel="noopener" className={s.btnGhost} data-hover>
+          <a href="https://www.linkedin.com/in/divyansh9917/" target="_blank" rel="noopener" className={s.btnGhost} data-hover>
             LinkedIn ↗
           </a>
         </div>
