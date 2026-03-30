@@ -1,0 +1,126 @@
+.hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 0 4rem; overflow: hidden;
+  background: var(--bg);
+}
+
+.canvas {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; z-index: 0;
+}
+
+.gridOverlay {
+  position: absolute; inset: 0; z-index: 1;
+  background-image:
+    linear-gradient(rgba(0,245,160,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,245,160,0.018) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(ellipse 80% 70% at 40% 55%, #000, transparent);
+}
+
+.content {
+  position: relative; z-index: 2;
+  max-width: 950px;
+}
+
+/* badge */
+.badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid rgba(0,245,160,0.25);
+  background: rgba(0,245,160,0.06);
+  border-radius: 100px; padding: 5px 16px;
+  font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em;
+  color: var(--e1); margin-bottom: 2rem;
+}
+.badgeDot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--e1);
+  animation: blink 1.6s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.1} }
+
+/* name */
+.name {
+  display: block;
+  font-family: var(--display);
+  font-size: clamp(5rem, 13vw, 13.5rem);
+  line-height: 0.87; letter-spacing: 0.01em;
+  margin-bottom: 1.2rem;
+}
+.nameFirst {
+  display: block;
+  background: linear-gradient(120deg, #fff 30%, var(--e1) 70%, var(--e2) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.nameLast {
+  display: block;
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.18);
+  -webkit-text-fill-color: transparent;
+}
+
+/* meta */
+.meta {
+  display: flex; align-items: center; gap: 1.2rem; flex-wrap: wrap;
+  font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.06em;
+  color: var(--muted); margin-bottom: 2.5rem;
+}
+.metaDot { width: 3px; height: 3px; border-radius: 50%; background: var(--muted); }
+
+/* cta */
+.cta { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 3.5rem; }
+
+.btnPrimary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--e1); color: #000;
+  font-family: var(--body); font-weight: 700; font-size: 0.88rem;
+  padding: 12px 28px; border-radius: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btnPrimary:hover { transform: translateY(-3px); box-shadow: 0 10px 35px rgba(0,245,160,0.3); }
+
+.btnGhost {
+  display: inline-flex; align-items: center; gap: 7px;
+  border: 1px solid var(--border); color: var(--text);
+  font-family: var(--body); font-weight: 500; font-size: 0.88rem;
+  padding: 12px 22px; border-radius: 6px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btnGhost:hover { border-color: var(--e2); color: var(--e2); }
+
+/* stats */
+.stats { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+.stat  { text-align: left; }
+.statNum {
+  display: block;
+  font-family: var(--display); font-size: 2rem; letter-spacing: 0.01em;
+  background: linear-gradient(135deg, var(--text), var(--e1));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.statLbl {
+  font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted);
+}
+.statDiv { width: 1px; height: 34px; background: var(--border); }
+
+/* scroll hint */
+.scrollHint {
+  position: absolute; bottom: 2.5rem; right: 4rem; z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+}
+.scrollTrack {
+  width: 1px; height: 50px; background: var(--border); position: relative; overflow: hidden;
+}
+.scrollTrack::after {
+  content: ''; position: absolute; top: -100%; left: 0; right: 0; height: 100%;
+  background: linear-gradient(transparent, var(--e1));
+  animation: scrollAnim 2s linear infinite;
+}
+@keyframes scrollAnim { to { top: 100%; } }
+
+@media (max-width: 900px) {
+  .hero    { padding: 0 1.5rem; padding-top: 7rem; align-items: flex-start; }
+  .scrollHint { right: 1.5rem; }
+  .stats { gap: 1.2rem; }
+}
